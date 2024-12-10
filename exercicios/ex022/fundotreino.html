@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Fundo</title>
+    <style>
+
+      #estrada {
+        background-image: url('imagens/asfalto750.jpg');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-repeat: no-repeat;
+            }
+
+             div {
+                background-size: 100% 100%;
+                position: absolute;
+                height: 300px;
+                width: 300px;
+             }
+
+            div > img {
+                margin: auto;
+                height: 300px;
+                width: 500px;
+                border-radius: 15px;
+                
+                left: 50%;
+                top: 50%;
+
+                transform: translate(+100%, -155%);
+            }
+
+    
+      
+    </style>
+</head>
+<body>
+    <section id="estrada"></section>
+    <div>
+        <img src="imagens/bugatti500.webp" alt="Carro Bugatti">
+    </div>
+</body>
+
+</html>
