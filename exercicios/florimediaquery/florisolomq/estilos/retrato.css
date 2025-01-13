@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(../imagens/fotoportrait.jpg);
-    background-position: center bottom;
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+    background-position: center;
 }
+
