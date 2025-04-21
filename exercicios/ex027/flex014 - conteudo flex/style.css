@@ -12,9 +12,14 @@ body {
     line-height: 1.5em;
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+h1, h2 {
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    text-align: left;
 }
 
 header, section.normal {
@@ -29,24 +34,38 @@ section.flex-content {
     flex-flow: column nowrap;
 }
 
-article.text-media {
-    display: flex;
-    flex-flow: row wrap;
-}
-
 article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 article > div.text {
     flex: 1 1 500px;
-
-    border: 2px dashed blue;
+}
+    
+article > div.media {
+    flex: 1 0 400px;
 }
 
-article > div.media {
-    flex: 1 0 500px;
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 320px;
+    padding: 10px;
 
-    border: 2px dashed red;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding-top: 15px;
+
 }
